@@ -1,0 +1,370 @@
+.header-service {
+	background: url('../../../images/back-ser1.jpg') no-repeat center;
+	background-size: cover;
+	height: 190px;
+	font-family: 'Quicksand', sans-serif;
+}
+.header-service-2 {
+	background: url('../../../images/back-ser2.jpg') no-repeat center;
+	background-size: cover;
+	height: 190px;
+	font-family: 'Quicksand', sans-serif;
+}
+.header-service-3 {
+	background: url('../../../images/back-ser3.jpg') no-repeat center;
+	background-size: cover;
+	height: 190px;
+	font-family: 'Quicksand', sans-serif;
+}
+.header-product-1 {
+	background: url('../../../images/back-prdo1.jpg') no-repeat center;
+	background-size: cover;
+	height: 190px;
+	font-family: 'Quicksand', sans-serif;
+}
+.header-contact-1 {
+	background: url('../../../images/back-cont1.jpg') no-repeat center;
+	background-size: cover;
+	height: 190px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.content_service-detail {
+	width: 100%;
+	text-align: center;
+}
+
+.header-content {
+	height: 100%;
+	background: #513b6f9e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	color: white;
+}
+
+.content-title {
+	font-size: 68px;
+}
+
+/* content-parrafo-styles */
+
+.content-service {
+	padding-top: 35px;
+	padding-bottom: 45px;
+	margin: auto;
+	width: 100%;
+	max-width: 1140px;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+}
+
+.info-parrafo {
+	width: 60%;
+}
+
+.info-parrafo .information {
+	text-align: left;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 26px;
+	color: #674c96;
+}
+
+.information .lista {
+	padding-left: 37px;
+}
+
+.information-list {
+	padding: 0 27px;
+}
+
+.information-list .lista li {
+	list-style: inherit;
+	display: list-item;
+	padding: 0;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 26px;
+	color: #674c96;
+	margin-left: 20px;
+}
+
+.info-images {
+	width: 40%;
+}
+
+.info-images .img {
+	padding: 0 50px;
+	padding-bottom: 15px;
+}
+.info-images .img img {
+	width: 100%;
+}
+
+/* box-info-style */
+
+.content-payment {
+	margin: 15px 0;
+	color: #987acd;
+	font-weight: 400;
+	border-top: 1px solid #987acd;
+	font-size: 17px;
+}
+
+.content-payment p {
+	font-weight: 500;
+}
+
+.content-pay {
+	display: flex;
+	justify-content: space-between;
+
+	border-left: 1px solid #987acd;
+}
+
+.columnOne {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	border-right: 1px solid#987acd;
+	border-bottom: 1px solid #987acd;
+	padding: 18px 0;
+}
+
+.columnTwo {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	border-right: 1px solid#987acd;
+	border-bottom: 1px solid #987acd;
+	padding: 8px 0;
+}
+
+.name-column {
+	width: 40%;
+	padding-left: 5px;
+}
+
+.icon-column {
+	width: 60%;
+	padding: 0 12px;
+	text-align: center;
+	justify-content: center;
+}
+
+.icon-column p {
+	text-align: center;
+}
+.icon-column .i-pago {
+	font-size: 36px;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 10px;
+}
+.icon-column .i-pago img {
+	height: 37px;
+}
+
+.icon-column .pago {
+	font-size: 15px;
+}
+
+.sale-button button {
+	font-size: 24px;
+	margin-top: 20px;
+	padding: 5px 33px;
+	border: 0;
+	color: white;
+	background-color: #987acd;
+	border-radius: 52px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.sale-button button:hover {
+	background-color: #6644a0;
+}
+
+.sale-button-product button {
+	font-size: 24px;
+	padding: 5px 33px;
+	border: 0;
+	color: white;
+	background-color: #987acd;
+	border-radius: 52px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.lista-tres {
+	display: flex;
+	margin-top: 30px;
+}
+
+.img-product {
+	max-width: 200px;
+}
+.img-product .swiper-container {
+	padding-bottom: 32px;
+}
+
+.img-product img {
+	width: 200px;
+}
+.info-product {
+	text-align: left;
+	font-weight: 100;
+	color: #674c96;
+	padding: 0px 27px;
+	overflow-y: scroll;
+	height: 280px;
+}
+
+.info-product-withoutScroll {
+	text-align: left;
+	font-weight: 100;
+	color: #674c96;
+	padding: 0px 27px;
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+}
+::-webkit-scrollbar-track {
+	background: #987acd1f;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, #ca9af1, #987acd);
+	border-radius: 3px;
+}
+
+.content-product {
+	padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 1400px) {
+	.content-title {
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 1140px) {
+	.information {
+		padding: 0 25px;
+	}
+	.content-payment {
+		margin-left: 25px;
+	}
+	.content-payment {
+		font-size: 16px;
+	}
+	.icon-column .i-pago {
+		font-size: 28px;
+	}
+	.icon-column .i-pago img {
+		height: 26px;
+	}
+	.icon-column .pago {
+		font-size: 13px;
+	}
+	.lista-tres {
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.content-service {
+		flex-direction: column-reverse;
+	}
+	.info-images {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.info-images .img {
+		padding: 10px;
+		padding-bottom: 15px;
+	}
+	.info-parrafo {
+		width: 100%;
+	}
+	.content-payment {
+		margin: 0 16px;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 586px) {
+	.img-product {
+		max-width: initial;
+	}
+	.content-pay {
+		display: initial;
+		border-left: none;
+	}
+	.columnOne,
+	.columnTwo {
+		width: auto;
+	}
+	.i-pago i {
+		margin: 0 20px;
+	}
+	.icon-column .i-pago {
+		padding: 0 51px;
+	}
+	.columnOne,
+	.columnTwo {
+		border-left: 1px solid#987acd;
+	}
+	.info-parrafo .information {
+		font-size: 15px;
+		line-height: initial;
+	}
+	.header-service-2,
+	.header-service-3,
+	.header-service,
+	.header-product-1,
+	.header-contact-1 {
+		height: 80px;
+	}
+	.content-title {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.lista-tres {
+		flex-direction: column-reverse;
+	}
+	.img-product {
+		padding: 17px 0 0 0;
+	}
+	.img-product img {
+		width: 100%;
+	}
+	.info-product {
+		padding: 0px;
+	}
+	.info-product-withoutScroll {
+		padding: 0px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.content-title {
+		font-size: 20px;
+	}
+	.content-service {
+		padding-top: 17px;
+		padding-bottom: 24px;
+	}
+}
