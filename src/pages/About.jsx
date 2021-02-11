@@ -1,60 +1,41 @@
 import React from 'react'
 import './styles/about.css'
-import alexia from './../images/about-back.png'
-import alexiaMobile from './../images/about-mobile.png'
+import imgInfo from '../images/about_only2.png'
 
  const Home = () => {
   return (
     <>
       <div className="content_about">
-        <div className="content_about-global desktop">
-          <div className="content_img-about">
-            <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div className="about-img">
-            <img src={alexia} alt=""/>
-          </div>
-          </div>
-          <div className="content_detail-about">
-            <div className="info-autor">
-              <p>
-              Mi nombre es Alexia Fernández soy <b>astróloga,</b> <b>terapeuta holística</b> y <b>canalizadora</b>. Estoy aquí para ayudarte y acompañarte en tu camino por esta tierra.
-            <br/><br/>
-            Los sucesos que viví a lo largo de mi vida me permitieron expandir mi conciencia y darme cuenta que somos más que materia, más que un cuerpo físico. Somos un ser completo en toda la dimensión. Somos parte de un infinito, el cual vive en el interior de cada uno de nosotros. Empecé mi camino espiritual aprendiendo astrología védica, siguiendo con estudios en astrología psicológica, eniología y numerología pitagórica. Ahora he decidido ayudar a quienes necesitan guía en este tránsito. Por eso decidí abrir este espacio, para que cada uno de los que pase por aquí pueda reencontrarse con esa luz que vive en su interior. 
-
-              </p>
+        <div className="about-header">
+          <div className="about_overlay">
+          <div className="about_container">
+              <p className="about_title">Nuestra <strong>Historia</strong></p>
+              <p className="about_info">Nuestra experiencia en el campo de la soldadura </p>
+              <br/>
+              <a className="" href>
+                <button className="contact_link" type="button">
+                Contáctanos
+                </button>
+              </a>
             </div>
           </div>
-
-          
         </div>
-
-        <div className="content_about-global mobile">
-          <div className="content_img-about">
-            <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-          <div className="about-img">
-            <img src={alexiaMobile} alt=""/>
-          </div>
-          </div>
-          <div className="content_detail-about">
-            <div className="info-autor">
-            <p>
-              Mi nombre es Alexia Fernández soy <b>astróloga,</b> <b>terapeuta holística</b> y <b>canalizadora</b>. Estoy aquí para ayudarte y acompañarte en tu camino por esta tierra.
+        <div className="about_information">
+          <div className="row_about">
+            <p>E&R SOLDINOXTIG S.A.C somos una empresa con más de 15 años de experiencia en el mercado nacional en la fabricación, mantenimiento y servicios en acero inoxidable.
+              <br/><br/>
+            Nuestra experiencia en el campo de la soldadura y en el trabajo de este tipo de materiales, garantizan el más sólido respaldo, lo cual nos posiciona como un proveedor confiable y seguro.
             <br/><br/>
-            Los sucesos que viví a lo largo de mi vida me permitieron expandir mi conciencia y darme cuenta que somos más que materia, más que un cuerpo físico. Somos un ser completo en toda la dimensión. Somos parte de un infinito, el cual vive en el interior de cada uno de nosotros. Empecé mi camino espiritual aprendiendo astrología védica, siguiendo con estudios en astrología psicológica, eniología y numerología pitagórica. Ahora he decidido ayudar a quienes necesitan guía en este tránsito. Por eso decidí abrir este espacio, para que cada uno de los que pase por aquí pueda reencontrarse con esa luz que vive en su interior. 
-
-              </p>
+            Nuestro objetivo principal es cumplir y asistir a nuestros clientes con responsabilidad y seriedad desde el inicio con la mejor asistencia profesional para así cumplir con todas las expectativas.
+            </p>
+          </div>
+          <div className="row_about">
+            <div className="">
+              <img src={imgInfo} alt=""/>
             </div>
           </div>
-
-          
         </div>
-       
       </div>
-
     </>
   )
 }

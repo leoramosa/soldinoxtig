@@ -39,6 +39,9 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.map_google {
+	padding-bottom: 25px;
+}
 
 /* .form.form-success-ok h1 {
   font-size: 22px;
@@ -82,7 +85,7 @@
 h1.form-success {
 	text-align: center;
 	font-size: 24px;
-	color: #573883;
+	color: #39373d;
 }
 
 .form-inputs {
@@ -116,7 +119,7 @@ h1.form-success {
 	height: 40px;
 	width: 100%;
 	border: none;
-	border: 1px solid #af8bd0;
+	border: 1px solid #5f5f5f;
 	padding: 10px 13px;
 }
 
@@ -130,7 +133,7 @@ h1.form-success {
 	height: 50px;
 	margin-top: 10px;
 	border-radius: 2px;
-	background: linear-gradient(90deg, #7619eb 0%, #b379fb 100%);
+	background: linear-gradient(90deg, #5f5f5f 0%, #2f2e2c 100%);
 	outline: none;
 	border: none;
 	color: #fff;
@@ -156,7 +159,7 @@ h1.form-success {
 
 .form-input-btn:hover {
 	cursor: pointer;
-	background: linear-gradient(90deg, #b379fb 0%, #7619eb 100%);
+	background: linear-gradient(90deg, #2f2e2c 0%, #5f5f5f 100%);
 	transition: all 0.4s ease-out;
 }
 
@@ -212,7 +215,18 @@ h1.form-success {
 	width: 35px;
 }
 
+@media screen and (max-width: 1200px) {
+	.content_map {
+		width: 400px;
+		padding: 0 15px;
+	}
+}
+
 @media screen and (max-width: 768px) {
+	.content_map {
+		width: 350px;
+		padding: 0 15px;
+	}
 	.form-content-left {
 		text-align: center;
 		padding-top: 22px;
@@ -226,5 +240,13 @@ h1.form-success {
 @media screen and (max-width: 700px) {
 	.form-container {
 		display: initial;
+	}
+}
+
+@media screen and (max-width: 488px) {
+	.content_map {
+		width: 300px;
+		height: 250px;
+		padding: 0 15px;
 	}
 }

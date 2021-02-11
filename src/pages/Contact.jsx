@@ -10,7 +10,7 @@ export default function Contact() {
     <div className="content_service-detail">
     <div className="header-contact-1">
           <div className="header-content">
-            <div className="overlay">
+            <div className="overlay-contact">
                 <div className="content-title">
                     <p>
                       Contacto

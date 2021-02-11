@@ -2,8 +2,7 @@ import React from 'react'
 import './styles/home.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import cover1 from '../images/cover1.jpg'
-import cover2 from '../images/cover2.jpg'
+
 import project1 from '../images/project1.jpg'
 import project2 from '../images/project2.jpg'
 import project3 from '../images/project3.jpg'
@@ -35,32 +34,37 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
               spaceBetween={0}
               slidesPerView={1}
               navigation
-              loop={true}
-              autoplay= {{
+             /*  loop={true} */
+              /* autoplay= {{
                 delay: 2500,
                 disableOnInteraction: false,
-              }}
+              }} */
               pagination={{ clickable: true }}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
+              className="swid"
             >
               <SwiperSlide className="swiper_container-box_1">
-                  <div className="img_content">
-                    <img src={cover1} alt=""/>
                     <div className="overlay">
-                      <p className="title_overlay">
+                      <div className="img_content">
+                        
+                          <p className="title_overlay">
 
-                    Escaleras | <span>Interiores</span> 
-                      </p>
-                    </div>
+                        Escaleras |
+                        <br/>
+                        <span>Interiores</span> 
+                          </p>
+                        </div>
                   </div>
               </SwiperSlide>
-              <SwiperSlide className="swiper_container-box_1">
-              <div className="img_content">
-                    <img src={cover2} alt=""/>
+              <SwiperSlide className="swiper_container-box_2">
                     <div className="overlay">
+              <div className="img_content">
+                   
                       <p className="title_overlay">
-                        Piscinas | <span>Exteriores</span> 
+                        Piscinas | 
+                        <br/>
+                        <span>Exteriores</span> 
                       </p>
                     </div>
                   </div>

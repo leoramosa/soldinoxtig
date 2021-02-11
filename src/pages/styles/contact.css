@@ -5,3 +5,10 @@
 	padding-top: 35px;
 	padding-bottom: 45px;
 }
+
+.header-contact-1 {
+	background: url('../../images/cover4.jpg') no-repeat center;
+	background-size: cover;
+	height: 190px;
+	font-family: 'Montserrat', sans-serif;
+}

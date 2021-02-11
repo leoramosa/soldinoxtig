@@ -29,14 +29,14 @@ import { Link } from "react-router-dom";
          <div className="explorer">
            <p className="title-info">Destacados</p>
            <div className="link-footer">
-            <Link className="footerLink" to="/s"><p>Proyectos</p></Link> 
+            <Link className="footerLink" to="/s"><p>Productos</p></Link> 
             <Link className="footerLink" to="/s"><p>Servicios</p></Link> 
              
            </div>
          </div>
        </div>
        <div className="derechos desktop">
-         <p>© Copyright Peruarq 2020 -Todos los derechos reservados</p>
+         <p>© Copyright Soldinoxtig 2021 -Todos los derechos reservados</p>
          <p className="diseño">Diseñado y desarrollado por <a className="dweb" href="https://leoramos.netlify.app/" target="_blank" rel="noreferrer"> Leonardo Ramos</a></p>
        </div>
 
