@@ -1,5 +1,6 @@
 
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import './styles/project.css'
 /* images */
@@ -13,9 +14,17 @@ function Projects () {
  
   let thumbnails = document.getElementsByClassName('thumbnail');
   let thumbnailsTwo = document.getElementsByClassName('thumbnailTwo');
+  let thumbnailsThree = document.getElementsByClassName('thumbnailThree');
+  let thumbnailsFour = document.getElementsByClassName('thumbnailFour');
+  let thumbnailsFive = document.getElementsByClassName('thumbnailFive');
+  let thumbnailsSix = document.getElementsByClassName('thumbnailSix');
 
   let activeImages = document.getElementsByClassName('active');
   let activeImagesTwo = document.getElementsByClassName('activeTwo');
+  let activeImagesThree = document.getElementsByClassName('activeThree');
+  let activeImagesFour = document.getElementsByClassName('activeFour');
+  let activeImagesFive = document.getElementsByClassName('activeFive');
+  let activeImagesSix = document.getElementsByClassName('activeSix');
 
   for (var i = 0; i < thumbnails.length; i++) {
     thumbnails[i].addEventListener('mouseover', function () {
@@ -42,6 +51,58 @@ function Projects () {
 
       this.classList.add('activeTwo');
       document.getElementById('featuredTwo').src = this.src;
+    });
+  }
+  
+  for (var p = 0; p < thumbnailsThree.length; p++) {
+    thumbnailsThree[p].addEventListener('mouseover', function () {
+      console.log(activeImagesThree);
+
+      if (activeImagesThree.length > 0) {
+        activeImagesThree[0].classList.remove('activeThree');
+      }
+
+      this.classList.add('activeThree');
+      document.getElementById('featuredThree').src = this.src;
+    });
+  }
+
+  for (var t = 0; t < thumbnailsFour.length; t++) {
+    thumbnailsFour[t].addEventListener('mouseover', function () {
+      console.log(activeImagesFour);
+
+      if (activeImagesFour.length > 0) {
+        activeImagesFour[0].classList.remove('activeFour');
+      }
+
+      this.classList.add('activeFour');
+      document.getElementById('featuredFour').src = this.src;
+    });
+  }
+
+  for (var m = 0; m < thumbnailsFive.length; m++) {
+    thumbnailsFive[m].addEventListener('mouseover', function () {
+      console.log(activeImagesFive);
+
+      if (activeImagesFive.length > 0) {
+        activeImagesFive[0].classList.remove('activeFive');
+      }
+
+      this.classList.add('activeFive');
+      document.getElementById('featuredFive').src = this.src;
+    });
+  }
+
+  for (var d = 0; d < thumbnailsSix.length; d++) {
+    thumbnailsSix[d].addEventListener('mouseover', function () {
+      console.log(activeImagesSix);
+
+      if (activeImagesSix.length > 0) {
+        activeImagesSix[0].classList.remove('activeSix');
+      }
+
+      this.classList.add('activeSix');
+      document.getElementById('featuredSix').src = this.src;
     });
   }
   
@@ -98,21 +159,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <a href>
+                   <Link to="/jhola">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </a>
-                   <a href>
+                     </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </a>
-                   <a href>
+                   </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </a>
+                   </Link>
                   </div> 
                 </div>
               </div>
@@ -147,21 +208,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <a href>
+                   <Link to="/jhola">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </a>
-                   <a href>
+                     </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </a>
-                   <a href>
+                   </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </a>
+                   </Link>
                   </div> 
                 </div>
               </div>
@@ -169,15 +230,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredTwo"  src={pro1} alt=""/>
+                  <img id="featuredThree"  src={pro1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailTwo activeTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
-                    <img className="thumbnailTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
+                    <img className="thumbnailThree activeThree" src={pro1} alt=""/>
+                    <img className="thumbnailThree" src={pro2} alt=""/>
+                    <img className="thumbnailThree" src={pro1} alt=""/>
+                    <img className="thumbnailThree" src={pro2} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -197,21 +258,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <a href>
+                   <Link to="/jhola">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </a>
-                   <a href>
+                     </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </a>
-                   <a href>
+                   </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </a>
+                   </Link>
                   </div> 
                 </div>
               </div>
@@ -219,15 +280,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredTwo"  src={pro1} alt=""/>
+                  <img id="featuredFour"  src={pro1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailTwo activeTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
-                    <img className="thumbnailTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
+                    <img className="thumbnailFour activeFour" src={pro1} alt=""/>
+                    <img className="thumbnailFour" src={pro2} alt=""/>
+                    <img className="thumbnailFour" src={pro1} alt=""/>
+                    <img className="thumbnailFour" src={pro2} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -248,21 +309,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <a href>
+                   <Link to="/jhola">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </a>
-                   <a href>
+                     </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </a>
-                   <a href>
+                   </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </a>
+                   </Link>
                   </div> 
                 </div>
               </div>
@@ -270,15 +331,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredTwo"  src={pro1} alt=""/>
+                  <img id="featuredFive"  src={pro1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailTwo activeTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
-                    <img className="thumbnailTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
+                    <img className="thumbnailFive activeFive" src={pro1} alt=""/>
+                    <img className="thumbnailFive" src={pro2} alt=""/>
+                    <img className="thumbnailFive" src={pro1} alt=""/>
+                    <img className="thumbnailFive" src={pro2} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -302,21 +363,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <a href>
+                   <Link to="/jhola">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </a>
-                   <a href>
+                     </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </a>
-                   <a href>
+                   </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </a>
+                   </Link>
                   </div> 
                 </div>
               </div>
@@ -324,15 +385,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredTwo"  src={pro1} alt=""/>
+                  <img id="featuredSix"  src={pro1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailTwo activeTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
-                    <img className="thumbnailTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
+                    <img className="thumbnailSix activeSix" src={pro1} alt=""/>
+                    <img className="thumbnailSix" src={pro2} alt=""/>
+                    <img className="thumbnailSix" src={pro1} alt=""/>
+                    <img className="thumbnailSix" src={pro2} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -351,21 +412,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <a href>
+                   <Link to="/jhola">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </a>
-                   <a href>
+                     </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </a>
-                   <a href>
+                   </Link>
+                   <Link to="/jhola">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </a>
+                   </Link>
                   </div> 
                 </div>
               </div>
