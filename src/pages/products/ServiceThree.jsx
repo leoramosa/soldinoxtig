@@ -33,7 +33,7 @@ const ServiceOne = () => {
              <div>Más información: </div> <div className="content-link-request"><a className="whatsapp" href={`https://api.whatsapp.com/send?phone=51981325313&text=${services[2].mensaje}${services[2].name}`} rel="noopener noreferrer"><i className="fab fa-whatsapp"></i> whatsapp </a> <a className="btn_email" href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank"><i className="far fa-envelope"></i> cotizar</a></div> 
             </div>
             <div className="detail_requestTwo">
-              Llamanos : <a href="tel://+519999999" className="btn_call"><i className="fas fa-phone-alt"></i> +51 936 999 999</a>
+            Llamanos : <a href="tel://+51981325313" className="btn_call"><i className="fas fa-phone-alt"></i> +51 981 325 313</a>
             </div>
           </div>
           <div className="service_detail-img">

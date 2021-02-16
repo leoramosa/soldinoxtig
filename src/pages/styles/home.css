@@ -122,16 +122,16 @@
 }
 
 .project_img.one {
-	background: url('../../images/project1.jpg') center center;
+	background: url('../../images/hog1.jpg') center center;
 }
 .project_img.two {
-	background: url('../../images/project2.jpg') center center;
+	background: url('../../images/bar1.jpg') center center;
 }
 .project_img.three {
-	background: url('../../images/project3.jpg') center center;
+	background: url('../../images/acc1.jpg') center center;
 }
 .project_img.four {
-	background: url('../../images/project4.jpg') center center;
+	background: url('../../images/parr1.jpg') center center;
 }
 
 .project_img_content {
