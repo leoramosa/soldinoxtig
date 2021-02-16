@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
            <div className="">
             <p>Teléfono: +51 981 325 313</p>
             <p>Email: vemtas@soldinoxtig.com</p>
-            <p>Direción: Lima - Perú</p>
+            <p>Direción: Pasaje Manuel ibérico 1891, cercado de lima</p>
            </div>
          </div>
          <div className="redes">
@@ -29,8 +29,8 @@ import { Link } from "react-router-dom";
          <div className="explorer">
            <p className="title-info">Destacados</p>
            <div className="link-footer">
-            <Link className="footerLink" to="/s"><p>Productos</p></Link> 
-            <Link className="footerLink" to="/s"><p>Servicios</p></Link> 
+            <Link className="footerLink" to="/productos-fabricados"><p>Productos</p></Link> 
+            <Link className="footerLink" to="/servicios"><p>Servicios</p></Link> 
              
            </div>
          </div>
