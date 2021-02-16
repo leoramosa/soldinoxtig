@@ -30,7 +30,7 @@ const useForm = (callback, validate) => {
   const handleSubmit = e =>{
     e.preventDefault();
    
-  emailjs.send('gma','s', values, 'ff')
+  emailjs.send('service_eaewc3p','template_w2kiwkm', values, 'user_bEhoPiSeNbWcqldvtXmSY')
   .then((response) => {
          console.log('SUCCESS!', response.status, response.text);
          setErrors(validate(values));
