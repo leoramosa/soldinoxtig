@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
            <p className="title-info">Contáctame</p>
            <div className="">
             <p>Teléfono: +51 981 325 313</p>
-            <p>Email: vemtas@soldinoxtig.com</p>
+            <p>Email: ventas@soldinoxtig.com</p>
             <p>Direción: Pasaje Manuel ibérico 1891, cercado de lima</p>
            </div>
          </div>
