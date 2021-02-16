@@ -1,12 +1,41 @@
 
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 import './styles/project.css'
 /* images */
 
-import pro1 from '../images/pro1.jpg'
-import pro2 from '../images/pro2.jpg'
+
+import pis1 from '../images/pis1.jpg'
+import pis2 from '../images/pis2.jpg'
+import pis3 from '../images/pis3.jpg'
+import pis4 from '../images/pis4.jpg'
+
+import coc1 from '../images/coc1.jpg'
+import coc2 from '../images/coc2.jpg'
+import coc3 from '../images/coc3.jpg'
+import coc4 from '../images/coc4.jpg'
+
+import parr1 from '../images/parr1.jpg'
+import parr2 from '../images/parr2.jpg'
+import parr3 from '../images/parr3.jpg'
+import parr4 from '../images/parr4.jpg'
+
+import bar1 from '../images/bar1.jpg'
+import bar2 from '../images/bar2.jpg'
+import bar3 from '../images/bar3.jpg'
+import bar4 from '../images/bar4.jpg'
+
+import hog1 from '../images/hog1.jpg'
+import hog2 from '../images/hog2.jpg'
+import hog3 from '../images/hog3.jpg'
+import hog4 from '../images/hog4.jpg'
+
+import acc1 from '../images/acc1.jpg'
+import acc2 from '../images/acc2.jpg'
+import acc3 from '../images/acc3.jpg'
+import acc4 from '../images/acc4.jpg'
+
+
 
 
 function Projects () {
@@ -126,15 +155,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featured"  src={pro1} alt=""/>
+                  <img id="featured"  src={hog1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnail active" src={pro1} alt=""/>
-                    <img className="thumbnail" src={pro2} alt=""/>
-                    <img className="thumbnail" src={pro1} alt=""/>
-                    <img className="thumbnail" src={pro2} alt=""/>
+                    <img className="thumbnail active" src={hog1} alt=""/>
+                    <img className="thumbnail" src={hog2} alt=""/>
+                    <img className="thumbnail" src={hog3} alt=""/>
+                    <img className="thumbnail" src={hog4} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -159,21 +188,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <Link to="/jhola">
+                   <a href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </Link>
-                   <Link to="/jhola">
+                     </a>
+                   <a href="https://api.whatsapp.com/send?phone=51981325313&text=Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20los%20productos%20fabricados%20de%20muebles%20para%20el%20hogar%20en%20acero%20inoxidable" rel="noopener noreferrer" target="_blank">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </Link>
-                   <Link to="/jhola">
+                   </a>
+                   <a href="tel://+51981325313" class="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </Link>
+                   </a>
                   </div> 
                 </div>
               </div>
@@ -181,15 +210,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredTwo"  src={pro1} alt=""/>
+                  <img id="featuredTwo"  src={bar1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailTwo activeTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
-                    <img className="thumbnailTwo" src={pro1} alt=""/>
-                    <img className="thumbnailTwo" src={pro2} alt=""/>
+                    <img className="thumbnailTwo activeTwo" src={bar1} alt=""/>
+                    <img className="thumbnailTwo" src={bar2} alt=""/>
+                    <img className="thumbnailTwo" src={bar3} alt=""/>
+                    <img className="thumbnailTwo" src={bar4} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -208,21 +237,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <Link to="/jhola">
+                   <a href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </Link>
-                   <Link to="/jhola">
+                     </a>
+                     <a href="https://api.whatsapp.com/send?phone=51981325313&text=Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20los%20productos%20fabricados%20de%20barandas%20y%20pasamanos%20en%20acero%20inoxidable" rel="noopener noreferrer" target="_blank">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </Link>
-                   <Link to="/jhola">
+                   </a>
+                   <a href="tel://+51981325313" class="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </Link>
+                   </a>
                   </div> 
                 </div>
               </div>
@@ -230,15 +259,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredThree"  src={pro1} alt=""/>
+                  <img id="featuredThree"  src={acc1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailThree activeThree" src={pro1} alt=""/>
-                    <img className="thumbnailThree" src={pro2} alt=""/>
-                    <img className="thumbnailThree" src={pro1} alt=""/>
-                    <img className="thumbnailThree" src={pro2} alt=""/>
+                    <img className="thumbnailThree activeThree" src={acc1} alt=""/>
+                    <img className="thumbnailThree" src={acc2} alt=""/>
+                    <img className="thumbnailThree" src={acc3} alt=""/>
+                    <img className="thumbnailThree" src={acc4} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -258,21 +287,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <Link to="/jhola">
+                   <a href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </Link>
-                   <Link to="/jhola">
+                     </a>
+                     <a href="https://api.whatsapp.com/send?phone=51981325313&text=Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20los%20productos%20fabricados%20de%20accesorios%20para%20interiores" rel="noopener noreferrer" target="_blank">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </Link>
-                   <Link to="/jhola">
+                   </a>
+                   <a href="tel://+51981325313" class="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </Link>
+                   </a>
                   </div> 
                 </div>
               </div>
@@ -280,15 +309,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredFour"  src={pro1} alt=""/>
+                  <img id="featuredFour"  src={parr1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailFour activeFour" src={pro1} alt=""/>
-                    <img className="thumbnailFour" src={pro2} alt=""/>
-                    <img className="thumbnailFour" src={pro1} alt=""/>
-                    <img className="thumbnailFour" src={pro2} alt=""/>
+                    <img className="thumbnailFour activeFour" src={parr1} alt=""/>
+                    <img className="thumbnailFour" src={parr2} alt=""/>
+                    <img className="thumbnailFour" src={parr3} alt=""/>
+                    <img className="thumbnailFour" src={parr4} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -309,21 +338,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <Link to="/jhola">
+                   <a href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </Link>
-                   <Link to="/jhola">
+                     </a>
+                     <a href="https://api.whatsapp.com/send?phone=51981325313&text=Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20los%20productos%20fabricados%20de%20parrillas%20en%20acero%20inoxidable" rel="noopener noreferrer" target="_blank">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </Link>
-                   <Link to="/jhola">
+                   </a>
+                   <a href="tel://+51981325313" class="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </Link>
+                   </a>
                   </div> 
                 </div>
               </div>
@@ -331,15 +360,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredFive"  src={pro1} alt=""/>
+                  <img id="featuredFive"  src={coc1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailFive activeFive" src={pro1} alt=""/>
-                    <img className="thumbnailFive" src={pro2} alt=""/>
-                    <img className="thumbnailFive" src={pro1} alt=""/>
-                    <img className="thumbnailFive" src={pro2} alt=""/>
+                    <img className="thumbnailFive activeFive" src={coc1} alt=""/>
+                    <img className="thumbnailFive" src={coc2} alt=""/>
+                    <img className="thumbnailFive" src={coc3} alt=""/>
+                    <img className="thumbnailFive" src={coc4} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -363,21 +392,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <Link to="/jhola">
+                   <a href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </Link>
-                   <Link to="/jhola">
+                     </a>
+                     <a href="https://api.whatsapp.com/send?phone=51981325313&text=Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20los%20productos%20fabricados%20de%20muebles%20de%20equipamento%20gastronomico" rel="noopener noreferrer" target="_blank">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </Link>
-                   <Link to="/jhola">
+                   </a>
+                   <a href="tel://+51981325313" class="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </Link>
+                   </a>
                   </div> 
                 </div>
               </div>
@@ -385,15 +414,15 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredSix"  src={pro1} alt=""/>
+                  <img id="featuredSix"  src={pis1} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailSix activeSix" src={pro1} alt=""/>
-                    <img className="thumbnailSix" src={pro2} alt=""/>
-                    <img className="thumbnailSix" src={pro1} alt=""/>
-                    <img className="thumbnailSix" src={pro2} alt=""/>
+                    <img className="thumbnailSix activeSix" src={pis1} alt=""/>
+                    <img className="thumbnailSix" src={pis2} alt=""/>
+                    <img className="thumbnailSix" src={pis3} alt=""/>
+                    <img className="thumbnailSix" src={pis4} alt=""/>
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -412,21 +441,21 @@ function Projects () {
                 
                 <div className="button_project">
                  <div className="">
-                   <Link to="/jhola">
+                   <a href="mailto:ventas@soldinoxtig.com"  rel="noreferrer" target="_blank">
                      <button>
                      <i className="far fa-envelope"></i> Cotizar
                      </button>
-                     </Link>
-                   <Link to="/jhola">
+                     </a >
+                     <a href="https://api.whatsapp.com/send?phone=51981325313&text=Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20los%20productos%20fabricados%20de%20accesorios%20para%20piscinas%20en%20acero%20inoxidable" rel="noopener noreferrer" target="_blank">
                       <button>
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
-                   </Link>
-                   <Link to="/jhola">
+                   </a>
+                   <a href="tel://+51981325313" class="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
-                   </Link>
+                   </a>
                   </div> 
                 </div>
               </div>

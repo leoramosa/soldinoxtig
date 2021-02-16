@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
          <div className="info">
            <p className="title-info">Contáctame</p>
            <div className="">
-            <p>Teléfono: +51 993 861 447</p>
+            <p>Teléfono: +51 981 325 313</p>
             <p>Email: vemtas@soldinoxtig.com</p>
             <p>Direción: Lima - Perú</p>
            </div>

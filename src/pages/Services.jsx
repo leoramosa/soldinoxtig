@@ -32,7 +32,7 @@ function Services () {
                     <div className="breve"> &nbsp;&nbsp; {service.breve3}</div>
                     <div className="content-button">
                         <div className="content-bo">
-                            <a className="btn-whatsapp" href={`https://api.whatsapp.com/send?phone=519999999999&text=${service.mensaje}${service.name}`} rel="noopener noreferrer" target="_blank">
+                            <a className="btn-whatsapp" href={`https://api.whatsapp.com/send?phone=51981325313&text=${service.mensaje}${service.name}`} rel="noopener noreferrer" target="_blank">
                               <button className="button-whatsapp" type="button">
                                   <i className="fab fa-whatsapp"></i> {service.buttontype}
                               </button> 

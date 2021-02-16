@@ -17,8 +17,8 @@
 
 .contents_img img {
 	width: 100%;
-	max-width: 120px;
 	border-radius: 6px;
+	padding: 0 3px;
 }
 
 .project-und {
@@ -121,11 +121,11 @@
 .thumbnailFive,
 .thumbnailSix {
 	object-fit: cover;
-	max-width: 180px;
-	max-height: 100px;
+	max-width: 25%;
+	/* 	max-height: 100px; */
 	cursor: pointer;
 	opacity: 0.5;
-	border: 2px solid rgb(153, 153, 153);
+	/* border: 2px solid rgb(153, 153, 153); */
 }
 
 .thumbnail:hover {
@@ -154,7 +154,6 @@
 #slide-wrapper {
 	max-width: 500px;
 	display: flex;
-	min-height: 100px;
 	align-items: center;
 }
 
@@ -176,4 +175,115 @@
 	opacity: 0.5;
 	width: 35px;
 	height: 35px;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 1070px) {
+	.content-two p {
+		font-size: 20px;
+	}
+	.button_project button {
+		font-size: 16px;
+	}
+	.content-two div {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 960px) {
+	.content-two ul li {
+		margin-left: 20px;
+	}
+
+	.content-two p {
+		font-size: 18px;
+	}
+	.button_project button {
+		font-size: 14px;
+		margin: 0 8px;
+	}
+}
+
+@media (max-width: 768px) {
+	.project-und {
+		flex-direction: column;
+	}
+
+	.content-one,
+	.content-two {
+		width: 100%;
+	}
+	.content-two {
+		width: 100%;
+		padding: 0 25px;
+	}
+	#featured,
+	#featuredTwo,
+	#featuredThree,
+	#featuredFour,
+	#featuredFive,
+	#featuredSix {
+		max-width: 100%;
+	}
+	.thumbnail,
+	.thumbnailTwo,
+	.thumbnailThree,
+	.thumbnailFour,
+	.thumbnailFive,
+	.thumbnailSix {
+		max-width: 25%;
+		max-height: 100px;
+		border: 0;
+	}
+	.contents_img img {
+		margin: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.button_project div {
+		display: flex;
+		justify-content: center;
+		justify-content: space-between;
+	}
+	.button_project a {
+		width: 33.3333%;
+		padding: 0 5px;
+	}
+	.button_project button {
+		margin: 0px;
+		width: 100%;
+		padding: 10px 10px;
+	}
+}
+
+@media (max-width: 420px) {
+	.content-two p {
+		font-size: 16px;
+	}
+	.content-two div {
+		padding-left: 0px;
+		line-height: 22px;
+	}
+	.content-two ul li {
+		font-size: 14px;
+	}
+	.content-two {
+		padding: 0 15px;
+	}
+	.button_project button {
+		padding: 10px 5px;
+	}
+}
+@media (max-width: 365px) {
+	.content-two {
+		padding: 0 10px;
+	}
+	.button_project a {
+		padding: 0 2px;
+	}
+	.button_project button {
+		font-size: 12px;
+	}
 }
