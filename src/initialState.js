@@ -14,7 +14,8 @@ export default {
       'tipo':'servicios',
       'mensaje':'Un%20gusto%20empresa%20Soldinoxtig%2C%20quisiera%20m%C3%A1s%20informacion%20sobre%20el%20servicio%20de%20',
       'column':'one',
-      'link':'reparación-y-mantenimiento'
+      'link':'reparación-y-mantenimiento',
+      
     },
     {
       'id':2,
@@ -77,4 +78,139 @@ export default {
     },
     
   ],
+  products: [
+    {
+      "id":1,
+      "name":"product1",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog4.jpg"
+        },
+      ]
+    },
+    {
+      "id":2,
+      "name":"product1",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/bar1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/bar2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/bar3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/bar4.jpg"
+        },
+      ]
+    },
+    {
+      "id":3,
+      "name":"product3",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/acc1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/acc2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/acc3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/acc4.jpg"
+        },
+      ]
+    },
+    {
+      "id":4,
+      "name":"product4",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/parr1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/parr2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/parr3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/parr4.jpg"
+        },
+      ]
+    },
+    {
+      "id":5,
+      "name":"product5",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/coc1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/coc2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/coc3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/coc4.jpg"
+        },
+      ]
+    },
+    {
+      "id":6,
+      "name":"product6",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/pis1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/pis2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/pis3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/pis4.jpg"
+        },
+      ]
+    },
+    
+  ]
 };

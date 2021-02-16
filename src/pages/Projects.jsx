@@ -1,146 +1,28 @@
 
-import React from 'react'
+import React, { useContext, useState }  from 'react'
+import AppContext from "../context/AppContext";
 
 import './styles/project.css'
 /* images */
 
 
-import pis1 from '../images/pis1.jpg'
-import pis2 from '../images/pis2.jpg'
-import pis3 from '../images/pis3.jpg'
-import pis4 from '../images/pis4.jpg'
 
-import coc1 from '../images/coc1.jpg'
-import coc2 from '../images/coc2.jpg'
-import coc3 from '../images/coc3.jpg'
-import coc4 from '../images/coc4.jpg'
-
-import parr1 from '../images/parr1.jpg'
-import parr2 from '../images/parr2.jpg'
-import parr3 from '../images/parr3.jpg'
-import parr4 from '../images/parr4.jpg'
-
-import bar1 from '../images/bar1.jpg'
-import bar2 from '../images/bar2.jpg'
-import bar3 from '../images/bar3.jpg'
-import bar4 from '../images/bar4.jpg'
-
-import hog1 from '../images/hog1.jpg'
-import hog2 from '../images/hog2.jpg'
-import hog3 from '../images/hog3.jpg'
-import hog4 from '../images/hog4.jpg'
-
-import acc1 from '../images/acc1.jpg'
-import acc2 from '../images/acc2.jpg'
-import acc3 from '../images/acc3.jpg'
-import acc4 from '../images/acc4.jpg'
 
 
 
 
 function Projects () {
+  const {state} =useContext(AppContext)
+  const { products } = state;
 
- 
-  let thumbnails = document.getElementsByClassName('thumbnail');
-  let thumbnailsTwo = document.getElementsByClassName('thumbnailTwo');
-  let thumbnailsThree = document.getElementsByClassName('thumbnailThree');
-  let thumbnailsFour = document.getElementsByClassName('thumbnailFour');
-  let thumbnailsFive = document.getElementsByClassName('thumbnailFive');
-  let thumbnailsSix = document.getElementsByClassName('thumbnailSix');
-
-  let activeImages = document.getElementsByClassName('active');
-  let activeImagesTwo = document.getElementsByClassName('activeTwo');
-  let activeImagesThree = document.getElementsByClassName('activeThree');
-  let activeImagesFour = document.getElementsByClassName('activeFour');
-  let activeImagesFive = document.getElementsByClassName('activeFive');
-  let activeImagesSix = document.getElementsByClassName('activeSix');
-
-  for (var i = 0; i < thumbnails.length; i++) {
-    thumbnails[i].addEventListener('mouseover', function () {
-      console.log(activeImages);
-
-      if (activeImages.length > 0) {
-        activeImages[0].classList.remove('active');
-      }
-
-      this.classList.add('active');
-      document.getElementById('featured').src = this.src;
-    });
-  };
+  const [index, setIndex] = useState(0)
+  const [index2, setIndex2] = useState(0)
+  const [index3, setIndex3] = useState(0)
+  const [index4, setIndex4] = useState(0)
+  const [index5, setIndex5] = useState(0)
+  const [index6, setIndex6] = useState(0)
 
 
-
-  for (var l = 0; l < thumbnailsTwo.length; l++) {
-    thumbnailsTwo[l].addEventListener('mouseover', function () {
-      console.log(activeImagesTwo);
-
-      if (activeImagesTwo.length > 0) {
-        activeImagesTwo[0].classList.remove('activeTwo');
-      }
-
-      this.classList.add('activeTwo');
-      document.getElementById('featuredTwo').src = this.src;
-    });
-  }
-  
-  for (var p = 0; p < thumbnailsThree.length; p++) {
-    thumbnailsThree[p].addEventListener('mouseover', function () {
-      console.log(activeImagesThree);
-
-      if (activeImagesThree.length > 0) {
-        activeImagesThree[0].classList.remove('activeThree');
-      }
-
-      this.classList.add('activeThree');
-      document.getElementById('featuredThree').src = this.src;
-    });
-  }
-
-  for (var t = 0; t < thumbnailsFour.length; t++) {
-    thumbnailsFour[t].addEventListener('mouseover', function () {
-      console.log(activeImagesFour);
-
-      if (activeImagesFour.length > 0) {
-        activeImagesFour[0].classList.remove('activeFour');
-      }
-
-      this.classList.add('activeFour');
-      document.getElementById('featuredFour').src = this.src;
-    });
-  }
-
-  for (var m = 0; m < thumbnailsFive.length; m++) {
-    thumbnailsFive[m].addEventListener('mouseover', function () {
-      console.log(activeImagesFive);
-
-      if (activeImagesFive.length > 0) {
-        activeImagesFive[0].classList.remove('activeFive');
-      }
-
-      this.classList.add('activeFive');
-      document.getElementById('featuredFive').src = this.src;
-    });
-  }
-
-  for (var d = 0; d < thumbnailsSix.length; d++) {
-    thumbnailsSix[d].addEventListener('mouseover', function () {
-      console.log(activeImagesSix);
-
-      if (activeImagesSix.length > 0) {
-        activeImagesSix[0].classList.remove('activeSix');
-      }
-
-      this.classList.add('activeSix');
-      document.getElementById('featuredSix').src = this.src;
-    });
-  }
-  
-
-
-
- 
-
-  
   
   return (
     <>
@@ -155,15 +37,19 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featured"  src={hog1} alt=""/>
+                  <img id="featured"  src={products[0].images[index].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnail active" src={hog1} alt=""/>
-                    <img className="thumbnail" src={hog2} alt=""/>
-                    <img className="thumbnail" src={hog3} alt=""/>
-                    <img className="thumbnail" src={hog4} alt=""/>
+                  {products[0].images.map((prouct, index) => (
+                    <img key={index} 
+                    className="thumbnail" 
+                    src={prouct.img} 
+                    onClick={() => setIndex(index)}
+                    alt=""/>
+                    ))}
+
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -198,7 +84,7 @@ function Projects () {
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
                    </a>
-                   <a href="tel://+51981325313" class="btn_call">
+                   <a href="tel://+51981325313" className="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
@@ -210,15 +96,18 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredTwo"  src={bar1} alt=""/>
+                <img id="featured"  src={products[1].images[index2].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailTwo activeTwo" src={bar1} alt=""/>
-                    <img className="thumbnailTwo" src={bar2} alt=""/>
-                    <img className="thumbnailTwo" src={bar3} alt=""/>
-                    <img className="thumbnailTwo" src={bar4} alt=""/>
+                  {products[1].images.map((prouct, index2) => (
+                    <img key={index2} 
+                    className="thumbnail" 
+                    src={prouct.img} 
+                    onClick={() => setIndex2(index2)}
+                    alt=""/>
+                    ))}
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -247,7 +136,7 @@ function Projects () {
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
                    </a>
-                   <a href="tel://+51981325313" class="btn_call">
+                   <a href="tel://+51981325313" className="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
@@ -259,15 +148,18 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredThree"  src={acc1} alt=""/>
+                <img id="featured"  src={products[2].images[index3].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailThree activeThree" src={acc1} alt=""/>
-                    <img className="thumbnailThree" src={acc2} alt=""/>
-                    <img className="thumbnailThree" src={acc3} alt=""/>
-                    <img className="thumbnailThree" src={acc4} alt=""/>
+                  {products[2].images.map((prouct, index3) => (
+                    <img key={index3} 
+                    className="thumbnail" 
+                    src={prouct.img} 
+                    onClick={() => setIndex3(index3)}
+                    alt=""/>
+                    ))}
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -297,7 +189,7 @@ function Projects () {
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
                    </a>
-                   <a href="tel://+51981325313" class="btn_call">
+                   <a href="tel://+51981325313" className="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
@@ -309,15 +201,18 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredFour"  src={parr1} alt=""/>
+                <img id="featured"  src={products[3].images[index4].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailFour activeFour" src={parr1} alt=""/>
-                    <img className="thumbnailFour" src={parr2} alt=""/>
-                    <img className="thumbnailFour" src={parr3} alt=""/>
-                    <img className="thumbnailFour" src={parr4} alt=""/>
+                  {products[3].images.map((prouct, index4) => (
+                    <img key={index4} 
+                    className="thumbnail" 
+                    src={prouct.img} 
+                    onClick={() => setIndex4(index4)}
+                    alt=""/>
+                    ))}
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -348,7 +243,7 @@ function Projects () {
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
                    </a>
-                   <a href="tel://+51981325313" class="btn_call">
+                   <a href="tel://+51981325313" className="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
@@ -360,15 +255,18 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredFive"  src={coc1} alt=""/>
+                <img id="featured"  src={products[4].images[index5].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailFive activeFive" src={coc1} alt=""/>
-                    <img className="thumbnailFive" src={coc2} alt=""/>
-                    <img className="thumbnailFive" src={coc3} alt=""/>
-                    <img className="thumbnailFive" src={coc4} alt=""/>
+                  {products[4].images.map((prouct, index5) => (
+                    <img key={index5} 
+                    className="thumbnail" 
+                    src={prouct.img} 
+                    onClick={() => setIndex5(index5)}
+                    alt=""/>
+                    ))}
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -402,7 +300,7 @@ function Projects () {
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
                    </a>
-                   <a href="tel://+51981325313" class="btn_call">
+                   <a href="tel://+51981325313" className="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
@@ -414,15 +312,18 @@ function Projects () {
             <div className="project-und">
               <div className="content-one">
                 <div className="img_firts">
-                  <img id="featuredSix"  src={pis1} alt=""/>
+                <img id="featured"  src={products[5].images[index6].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
                   <div className="img_arrow_left"></div>
                   <div className="contents_img">
-                    <img className="thumbnailSix activeSix" src={pis1} alt=""/>
-                    <img className="thumbnailSix" src={pis2} alt=""/>
-                    <img className="thumbnailSix" src={pis3} alt=""/>
-                    <img className="thumbnailSix" src={pis4} alt=""/>
+                  {products[5].images.map((prouct, index6) => (
+                    <img key={index6} 
+                    className="thumbnail" 
+                    src={prouct.img} 
+                    onClick={() => setIndex6(index6)}
+                    alt=""/>
+                    ))}
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -451,7 +352,7 @@ function Projects () {
                       <i className="fab fa-whatsapp"></i> Escribenos
                       </button>
                    </a>
-                   <a href="tel://+51981325313" class="btn_call">
+                   <a href="tel://+51981325313" className="btn_call">
                       <button>
                       <i className="fas fa-phone-alt"></i> Llamanos
                       </button>
