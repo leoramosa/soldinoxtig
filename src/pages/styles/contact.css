@@ -12,3 +12,9 @@
 	height: 190px;
 	font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 576px) {
+	.header-contact-1 {
+		height: 115px;
+	}
+}
