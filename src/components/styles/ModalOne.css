@@ -128,6 +128,9 @@
 		width: 100%;
 		height: 350px;
 	}
+	.title-event-place {
+		padding-top: 14px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
