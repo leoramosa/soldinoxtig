@@ -1,0 +1,144 @@
+.Modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 25;
+	transition: 2s;
+	font-family: 'Quicksand', sans-serif;
+}
+.title-event-place {
+	background: #505050;
+	color: white;
+	padding-bottom: 8px;
+	font-size: 19px;
+}
+
+.Modal__container {
+	position: relative;
+	top: 5rem;
+	background-color: #ffffff;
+	padding: 1rem;
+
+	border-radius: 6px;
+	border: 1px solid #a5a5a5;
+	transition-property: opacity, left, top, height;
+	transition-duration: 3s, 5s, 3s, 5s;
+	transition-delay: 10s;
+	width: 100%;
+	max-width: 900px;
+}
+
+.Modal__close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	background-color: #f5f5f5;
+	padding: 0.5rem 1rem;
+}
+
+.element__icon {
+	background-color: #54b268;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 16px;
+}
+
+.element__description {
+	text-align: center;
+}
+
+.btn-gocart {
+	text-decoration: none;
+}
+
+.element__sale {
+	font-size: 15px;
+	color: #54b268;
+	font-weight: 700;
+	padding: 0px 37px;
+	text-align: center;
+	justify-content: center;
+}
+
+.continure_sale {
+	padding-top: 22px;
+	color: #4539ab;
+	height: 80px;
+}
+
+.continure_sale a:hover {
+	color: #4539ab;
+}
+
+.wrapperImg {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.videoPlayer {
+	width: 100%;
+	height: 480px;
+}
+
+@media only screen and (max-width: 1440px) {
+	.Modal__container {
+		max-width: 800px;
+		height: auto;
+		margin: 0;
+	}
+	.wrapperImg {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.Modal__container {
+		max-width: 510px;
+		height: auto;
+		margin: 0;
+	}
+	.title-event-place p {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.Modal__container {
+		max-width: 480px;
+		height: 500px;
+		margin: 0;
+		overflow-y: scroll;
+		top: 2rem;
+	}
+	.videoPlayer {
+		width: 100%;
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.Modal__container {
+		max-width: 320px;
+		height: 450px;
+		top: 2rem;
+		margin: 0;
+	}
+	.img-small img {
+		width: 120px;
+		height: 120px;
+	}
+}

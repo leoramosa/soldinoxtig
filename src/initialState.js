@@ -117,10 +117,7 @@ export default {
           "id":3,
           'img':"https://apiweb.netlify.app/images/soldi/product/bar3.jpg"
         },
-        {
-          "id":4,
-          'img':"https://apiweb.netlify.app/images/soldi/product/bar4.jpg"
-        },
+
       ]
     },
     {
@@ -208,6 +205,40 @@ export default {
         {
           "id":4,
           'img':"https://apiweb.netlify.app/images/soldi/product/pis4.jpg"
+        },
+      ]
+    },
+    {
+      "id":7,
+      "name":"product7",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol3.jpg"
+        },
+        {
+          "id":4,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol4.jpg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol5.jpg"
+        },
+        {
+          "id":6,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol6.jpg"
+        },
+        {
+          "id":7,
+          'img':"https://apiweb.netlify.app/images/soldi/product/sol7.jpg"
         },
       ]
     },

@@ -5,6 +5,8 @@ import AppContext from "../context/AppContext";
 import './styles/project.css'
 /* images */
 
+import ModalVideoOne from '../components/ModalVideoOne'
+
 
 
 
@@ -21,6 +23,16 @@ function Projects () {
   const [index4, setIndex4] = useState(0)
   const [index5, setIndex5] = useState(0)
   const [index6, setIndex6] = useState(0)
+
+  const [showModalvideo1, setShowModalvideo1] = useState(false);
+
+  const OpenModalvideo1 = () => {
+    setShowModalvideo1(true);
+  };
+
+  const CloseModalvideo1 = () => {
+    setShowModalvideo1(false);
+  };
 
 
   
@@ -49,9 +61,7 @@ function Projects () {
                     onClick={() => setIndex(index)}
                     alt=""/>
                     ))}
-
                   </div>
-                  <div className="img_arrow_right"></div>
                 </div>
               </div>
               <div className="content-two">
@@ -108,6 +118,11 @@ function Projects () {
                     onClick={() => setIndex2(index2)}
                     alt=""/>
                     ))}
+                     <img src="https://apiweb.netlify.app/images/soldi/product/bar4.jpg" className="thumbnail"
+                  onClick={OpenModalvideo1}
+                  alt=""
+                  />
+                 
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -119,7 +134,7 @@ function Projects () {
                   <ul>
                     <li>Barandas modelo estándar</li>   
                     <li>Barandas con vidrio templado</li>
-                    <li>barandas con pasamano de madera</li>   
+                    <li>Barandas con pasamano de madera</li>   
                   </ul>
                 </div>
                 </div>
@@ -335,7 +350,7 @@ function Projects () {
                   <ul>
                     <li>Cascadas </li>   
                     <li>Escaleras para el ingreso de piscina</li>
-                    <li> Rejillas para drenajea</li>   
+                    <li> Rejillas para drenajes</li>   
                   </ul>
                 </div>
                 </div>
@@ -362,6 +377,7 @@ function Projects () {
               </div>
             </div>
           </div>
+          <ModalVideoOne CloseModalvideo1={CloseModalvideo1} showModalvideo1={showModalvideo1}/>
       </div>
     </>
   )

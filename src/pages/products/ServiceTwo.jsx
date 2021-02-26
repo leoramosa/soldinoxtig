@@ -1,7 +1,7 @@
 import React, { useContext }from 'react'
 import  AppContext   from '../../context/AppContext';
 import './styles/styleSerOne.css'
-
+import Tabs from '../../components/Tabs'
 
 
 const ServiceOne = () => {
@@ -36,8 +36,8 @@ const ServiceOne = () => {
             Llamanos : <a href="tel://+51981325313" className="btn_call"><i className="fas fa-phone-alt"></i> +51 981 325 313</a>
             </div>
           </div>
-          <div className="service_detail-img">
-            <img src={services[1].image} alt=""/>
+          <div className="service_detail-tabs">
+           <Tabs/>
           </div>
         </div>
 
