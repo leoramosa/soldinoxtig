@@ -242,6 +242,25 @@ export default {
         },
       ]
     },
+    {
+      "id":8,
+      "name":"product8",
+      'images':[
+        {
+          "id":1,
+          'img':"https://apiweb.netlify.app/images/soldi/product/encha1.jpg"
+        },
+        {
+          "id":2,
+          'img':"https://apiweb.netlify.app/images/soldi/product/encha2.jpg"
+        },
+        {
+          "id":3,
+          'img':"https://apiweb.netlify.app/images/soldi/product/encha3.jpg"
+        },
+       
+      ]
+    },
     
   ]
 };

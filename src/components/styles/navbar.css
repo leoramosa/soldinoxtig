@@ -2,7 +2,7 @@
 	background: white;
 	padding-top: 5px;
 	padding-bottom: 8px;
-	border-bottom: 2px solid #03345661;
+	/* 	border-bottom: 2px solid #03345661; */
 }
 
 .content-nav {
@@ -62,8 +62,8 @@
 
 .content-nav a.current {
 	padding-bottom: 4px;
-	border-bottom: 2px solid rgb(70, 70, 70);
-	color: #1d1f20;
+	color: #0a0a0a;
+	font-weight: 600;
 }
 
 @media (max-width: 700px) {
@@ -98,7 +98,7 @@
 
 	a.current {
 		padding-bottom: 4px;
-		border-bottom: 1px solid #573871;
+		/* 	border-bottom: 1px solid #573871; */
 		color: white;
 	}
 }
