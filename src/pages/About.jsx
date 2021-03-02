@@ -30,7 +30,7 @@ import { Link } from 'react-router-dom'
        <p>
        E&R Soldinoxtig S.A.C. es una empresa dedicada a todo tipo de fabricación diseños y remodelación de productos en acero inoxidable.
        <br/><br/>
-      Brindamos servicio de calidad y 100% de garantia en todos nuestros trabajos, tales como:
+      Brindamos servicio de calidad y 100% garantia en todos nuestros trabajos, tales como:
       <br/><br/>
       - Remodelación, mantenimiento de equipamentos en acero inoxidable.
       <br/><br/>
