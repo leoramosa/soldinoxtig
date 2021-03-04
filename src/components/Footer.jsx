@@ -21,8 +21,8 @@ import { Link } from "react-router-dom";
          <div className="redes">
             <p className="title-info">Síguenos:</p>
             <div className="icon-redes">
-              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-square"></i></a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/soldinoxtigsac" target="_blank" rel="noreferrer"><i className="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/soldinoxtig.sac/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
 
             </div>
          </div>
