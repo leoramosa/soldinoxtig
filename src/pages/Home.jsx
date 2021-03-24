@@ -1,7 +1,5 @@
 import React from 'react'
 import './styles/home.css'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,8 +21,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
     <>
 
       <div className="content_home">
-      
-        <NavBar/>
+
         <div className="Home_container">
         <div className="swiper_content_app">
           <Swiper
@@ -138,7 +135,6 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
             </div>
           </div>
           </div>
-          <Footer/>
       </div>
       
      

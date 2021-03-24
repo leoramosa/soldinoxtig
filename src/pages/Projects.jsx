@@ -6,6 +6,7 @@ import './styles/project.css'
 /* images */
 
 import ModalVideoOne from '../components/ModalVideoOne'
+import ModalVideoThree from '../components/ModalVideoThree'
 
 
 
@@ -25,6 +26,7 @@ function Projects () {
   const [index6, setIndex6] = useState(0)
 
   const [showModalvideo1, setShowModalvideo1] = useState(false);
+  const [showModalvideo3, setShowModalvideo3] = useState(false);
 
   const OpenModalvideo1 = () => {
     setShowModalvideo1(true);
@@ -32,6 +34,14 @@ function Projects () {
 
   const CloseModalvideo1 = () => {
     setShowModalvideo1(false);
+  };
+
+  const OpenModalvideo3 = () => {
+    setShowModalvideo3(true);
+  };
+
+  const CloseModalvideo3 = () => {
+    setShowModalvideo3(false);
   };
 
 
@@ -339,6 +349,10 @@ function Projects () {
                     onClick={() => setIndex6(index6)}
                     alt=""/>
                     ))}
+                    <img src="https://apiweb.netlify.app/images/soldi/product/postervideo3.jpg" className="thumbnail"
+                  onClick={OpenModalvideo3}
+                  alt=""
+                  />
                   </div>
                   <div className="img_arrow_right"></div>
                 </div>
@@ -378,6 +392,7 @@ function Projects () {
             </div>
           </div>
           <ModalVideoOne CloseModalvideo1={CloseModalvideo1} showModalvideo1={showModalvideo1}/>
+          <ModalVideoThree CloseModalvideo3={CloseModalvideo3} showModalvideo3={showModalvideo3}/>
       </div>
     </>
   )

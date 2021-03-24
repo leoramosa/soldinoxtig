@@ -199,10 +199,6 @@ export default {
           'img':"https://apiweb.netlify.app/images/soldi/product/pis2.jpg"
         },
         {
-          "id":3,
-          'img':"https://apiweb.netlify.app/images/soldi/product/pis3.jpg"
-        },
-        {
           "id":4,
           'img':"https://apiweb.netlify.app/images/soldi/product/pis4.jpg"
         },
