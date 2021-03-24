@@ -349,7 +349,7 @@ function Projects () {
                     onClick={() => setIndex6(index6)}
                     alt=""/>
                     ))}
-                    <img src="https://apiweb.netlify.app/images/soldi/product/postervideo3.jpg" className="thumbnail"
+                    <img src="https://apiweb.netlify.app/images/soldi/product/postervideo32.jpg" className="thumbnail"
                   onClick={OpenModalvideo3}
                   alt=""
                   />
