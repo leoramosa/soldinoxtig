@@ -8,7 +8,17 @@ import './styles/project.css'
 import ModalVideoOne from '../components/ModalVideoOne'
 import ModalVideoThree from '../components/ModalVideoThree'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
+import 'swiper/components/effect-fade/effect-fade.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
 
+// import Swiper core and required components
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper';
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
 
 
 
@@ -62,15 +72,38 @@ function Projects () {
                   <img id="featured"  src={products[0].images[index].img} alt=""/>
                 </div>
                 <div className="slider_wrapper">
-                  <div className="img_arrow_left"></div>
+                  
                   <div className="contents_img">
-                  {products[0].images.map((prouct, index) => (
-                    <img key={index} 
-                    className="thumbnail" 
-                    src={prouct.img} 
-                    onClick={() => setIndex(index)}
-                    alt=""/>
-                    ))}
+                  <Swiper
+                    
+                    spaceBetween={10}
+                    slidesPerView={4}
+                    navigation
+                    loop={true}
+                    /* autoplay= {{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }} */
+                    pagination={{ clickable: true }}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    className="full-pf"
+                  >
+                    
+                      {products[0].images.map((prouct, index) => (
+                      <SwiperSlide className="swiper_product_fa">
+
+
+                      <img key={index} 
+                      className="thumbnail-sl" 
+                      src={prouct.img} 
+                      onClick={() => setIndex(index)}
+                      alt=""/>
+
+                      </SwiperSlide>
+                      ))}
+                </Swiper>
+                  
                   </div>
                 </div>
               </div>

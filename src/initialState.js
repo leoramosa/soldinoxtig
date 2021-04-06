@@ -99,6 +99,34 @@ export default {
           "id":4,
           'img':"https://apiweb.netlify.app/images/soldi/product/hog4.jpg"
         },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog5.jpeg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog6.jpeg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog7.jpeg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog8.jpeg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog9.jpeg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog10.jpeg"
+        },
+        {
+          "id":5,
+          'img':"https://apiweb.netlify.app/images/soldi/product/hog11.jpeg"
+        },
       ]
     },
     {

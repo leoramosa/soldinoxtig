@@ -130,6 +130,15 @@
 	/* border: 2px solid rgb(153, 153, 153); */
 }
 
+.thumbnail-sl {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.thumbnail-sl:hover {
+	opacity: 1;
+}
+
 .thumbnail:hover {
 	opacity: 1;
 }
