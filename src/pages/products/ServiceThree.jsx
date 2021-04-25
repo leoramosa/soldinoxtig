@@ -2,11 +2,27 @@ import React, { useContext }from 'react'
 import  AppContext   from '../../context/AppContext';
 import './styles/styleSerOne.css'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+
+// import Swiper core and required components
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
 
 
 const ServiceOne = () => {
+
+  
   const {state} = useContext(AppContext)
   const { services } = state;
+  const { products } = state;
 
 
   return (
@@ -36,8 +52,29 @@ const ServiceOne = () => {
             Llamanos : <a href="tel://+51981325313" className="btn_call"><i className="fas fa-phone-alt"></i> +51 981 325 313</a>
             </div>
           </div>
-          <div className="service_detail-img">
-            <img src={services[2].image} alt=""/>
+          <div className="service_detail-img-slider">
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            navigation
+            /* autoplay= {{
+              delay: 2500,
+              disableOnInteraction: false,
+            }} */
+            loop={true}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+     
+            /* onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)} */
+          >
+          {products[8].images.map((product, i) => (
+            <SwiperSlide key={product+i}>
+              <img src={product.img} alt=""/>
+              
+               </SwiperSlide>
+                ))}
+          </Swiper>
           </div>
         </div>
 
